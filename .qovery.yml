@@ -1,0 +1,16 @@
+---
+application:
+  name: "webauthn-demo-app"
+  project: "webauthn-demo-app"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "disk-1"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/disk-1"
+routers:
+- name: "main-webauthn-demo-app"
+  routes:
+  - application_name: "webauthn-demo-app"
+    paths:
+    - "/*"
